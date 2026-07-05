@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bloom & Blush Shop</title>
+
+<link rel="stylesheet" href="shop.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<h1>🌸 Bloom & Blush</h1>
+
+<div class="header-right">
+
+<input
+type="text"
+id="searchBar"
+placeholder="Search makeup, skincare...">
+
+<select id="categoryFilter">
+
+<option value="all">All Categories</option>
+
+<option value="makeup">Makeup</option>
+
+<option value="skincare">Skincare</option>
+
+<option value="tools">Beauty Tools</option>
+
+</select>
+
+<select id="sortPrice">
+
+<option value="default">Sort By</option>
+
+<option value="lowHigh">Price: Low → High</option>
+
+<option value="highLow">Price: High → Low</option>
+
+</select>
+
+<a href="auth.html">👤 Account</a>
+
+<a href="wishlist.html">
+❤️ <span id="wishlistCount">0</span>
+</a>
+
+<a href="cart.html">
+🛒 <span id="cartCount">0</span>
+</a>
+
+</div>
+
+</header>
+
+<section
+class="product-container"
+id="productContainer">
+
+</section>
+
+<script src="shop.js"></script>
+
+</body>
+</html>

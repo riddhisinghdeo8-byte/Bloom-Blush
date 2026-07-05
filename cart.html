@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shopping Cart | Bloom & Blush</title>
+
+<link rel="stylesheet" href="cart.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="cart-header">
+
+<div class="logo">
+Bloom <span>&</span> Blush
+</div>
+
+<nav>
+
+<a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+
+<a href="shop.html"><i class="fa-solid fa-bag-shopping"></i> Shop</a>
+
+<a href="wishlist.html"><i class="fa-solid fa-heart"></i> Wishlist</a>
+
+<a href="auth.html"><i class="fa-solid fa-user"></i> Account</a>
+
+</nav>
+
+</header>
+
+<section class="cart-page">
+
+<div class="cart-left">
+
+<h1>🛍 Your Shopping Cart</h1>
+
+<p class="cart-subtitle">
+Your favourite beauty products are waiting for checkout.
+</p>
+
+<div id="cartItems">
+
+<!-- Products load here from cart.js -->
+
+</div>
+
+</div>
+
+<div class="cart-right">
+
+<div class="summary-box">
+
+<h2>Order Summary</h2>
+
+<div class="coupon-box">
+                <h3>🎁 Apply Coupon</h3>
+
+                <div class="coupon-input">
+                    <input
+                        type="text"
+                        id="coupon"
+                        placeholder="Enter coupon code">
+
+                    <button onclick="applyCoupon()">
+                        Apply
+                    </button>
+                </div>
+            </div>
+
+            <div class="delivery-box">
+
+                <h3>🚚 Delivery Benefits</h3>
+
+                <p>Free Shipping on orders above <b>₹999</b></p>
+
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+
+                <small>You're just a few products away from FREE delivery!</small>
+
+            </div>
+
+            <button class="checkout-btn"
+                onclick="window.location.href='checkout.html'">
+                Proceed to Checkout →
+            </button>
+
+            <div class="secure-payment">
+
+                <h3>Why Shop With Bloom & Blush?</h3>
+
+                <p>🔒 100% Secure Payments</p>
+
+                <p>💳 UPI • Debit/Credit Cards • Net Banking • COD</p>
+
+                <p>🚚 Fast Delivery Across India</p>
+
+                <p>↩ 7 Days Easy Return</p>
+
+                <p>⭐ Trusted by 10,000+ Beauty Lovers</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

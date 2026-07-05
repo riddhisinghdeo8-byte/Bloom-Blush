@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout - Bloom & Blush</title>
+
+<link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h2>💳 Checkout</h2>
+  <a href="cart.html">⬅ Back to Cart</a>
+</header>
+
+<section class="checkout-box">
+
+  <h3>Order Summary</h3>
+
+  <div id="summary"></div>
+
+  <h2 id="total">Total: ₹0</h2>
+
+  <h3>Choose Payment Method</h3>
+
+<div class="payment-box">
+
+  <label>
+    <input type="radio" name="pay" value="upi" onclick="showPay('upi')">
+    UPI Payment
+  </label>
+
+  <label>
+    <input type="radio" name="pay" value="card" onclick="showPay('card')">
+    Card Payment
+  </label>
+
+</div>
+
+<!-- UPI SECTION -->
+<div id="upiBox" class="pay-section" style="display:none;">
+  <h4>Pay via UPI</h4>
+
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=pay@eclaire" />
+
+  <input type="text" id="upiId" placeholder="Enter your UPI ID (example@upi)">
+</div>
+
+<!-- CARD SECTION -->
+<div id="cardBox" class="pay-section" style="display:none;">
+  <h4>Card Details</h4>
+
+  <input type="text" id="cardName" placeholder="Card Holder Name">
+  <input type="text" id="cardNumber" placeholder="Card Number (16 digits)">
+  
+  <input type="text" id="expDate" placeholder="MM/YY">
+  <input type="password" id="cvv" placeholder="CVV">
+</div>
+
+<button onclick="payNow()">Pay Now 💳</button>
+<script src="checkout.js"></script>
+<div class="coupon-box">
+
+    <h3>Have a Coupon?</h3>
+
+    <input
+        type="text"
+        id="couponCode"
+        placeholder="Enter coupon code">
+
+    <button onclick="applyCoupon()">
+        Apply Coupon
+    </button>
+
+    <p id="couponMessage"></p>
+
+</div>

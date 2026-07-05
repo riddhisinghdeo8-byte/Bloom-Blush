@@ -1,0 +1,59 @@
+body {
+  font-family: Arial;
+  background: #fff0f5;
+  margin: 0;
+  text-align: center;
+}
+
+/* BACK BUTTON */
+.back {
+  display: inline-block;
+  margin: 15px;
+  text-decoration: none;
+  color: #ff4d6d;
+  font-weight: bold;
+}
+
+/* PRODUCT BOX */
+.product-box {
+  background: white;
+  padding: 25px;
+  margin: 50px auto;
+  width: 60%;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.price {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.price del {
+  color: gray;
+  font-size: 14px;
+}
+
+.desc {
+  color: #555;
+  margin: 15px 0;
+}
+
+/* BUTTONS */
+button {
+  margin: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:nth-child(4) {
+  background: #ff4d6d;
+  color: white;
+}
+
+button:nth-child(5) {
+  background: black;
+  color: white;
+}

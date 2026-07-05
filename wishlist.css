@@ -1,0 +1,56 @@
+body {
+  font-family: Arial;
+  background: #fff0f3;
+  margin: 0;
+}
+
+/* HEADER */
+.header {
+  background: #ff4d6d;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+/* GRID */
+#wishlistContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* BUTTONS */
+button {
+  margin: 5px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:nth-child(4) {
+  background: #ff4d6d;
+  color: white;
+}
+
+button:nth-child(5) {
+  background: black;
+  color: white;
+}

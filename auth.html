@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bloom & Blush | Account</title>
+
+<link rel="stylesheet" href="auth.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LEFT SIDE -->
+
+    <div class="left">
+
+        <div class="overlay"></div>
+
+        <div class="brand">
+
+            <h1>Bloom <span>&</span> Blush</h1>
+
+            <p>
+                Luxury Makeup • Skincare • Beauty
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="right">
+
+        <div class="glass-card">
+
+            <div class="tabs">
+
+                <button class="tab active"
+                onclick="showLogin()">
+                    Login
+                </button>
+
+                <button class="tab"
+                onclick="showSignup()">
+                    Sign Up
+                </button>
+
+            </div>
+
+            <!-- LOGIN -->
+
+            <div id="loginForm">
+
+                <h2>Welcome Back ✨</h2>
+
+                <p class="subtitle">
+                    Login to continue shopping.
+                </p>
+
+                <input
+                type="email"
+                placeholder="Email">
+
+                <div class="password">
+
+                    <input
+                    type="password"
+                    id="loginPass"
+                    placeholder="Password">
+
+                    <i class="fa-solid fa-eye"
+                    onclick="togglePassword('loginPass')"></i>
+
+                </div>
+
+                <button class="main-btn">
+                    Login
+                </button>
+
+                <div class="divider">
+                    OR
+                </div>
+
+                <button class="google">
+
+                    <i class="fa-brands fa-google"></i>
+
+                    Continue with Google
+
+                </button>
+
+            </div>
+
+            <!-- SIGNUP -->
+
+            <div id="signupForm" style="display:none;">
+
+                <h2>Create Account 💖</h2>
+
+                <p class="subtitle">
+                    Join Bloom & Blush today.
+                </p>
+
+                <input
+                type="text"
+                placeholder="Full Name">
+
+                <input
+                type="email"
+                placeholder="Email">
+
+                <div class="password">
+
+                    <input
+                    type="password"
+                    id="signupPass"
+                    placeholder="Password">
+
+                    <i class="fa-solid fa-eye"
+                    onclick="togglePassword('signupPass')"></i>
+
+                </div>
+
+                <button class="main-btn">
+
+                    Create Account
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="auth.js"></script>
+
+</body>
+</html>

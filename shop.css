@@ -1,0 +1,204 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(90deg, #ff4d6d, #ff8fa3);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header input,
+.header select {
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.icons {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+    overflow:hidden;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+
+/* =========================
+    PRODUCT CARD
+========================= */
+
+.product{
+
+background:white;
+
+border-radius:25px;
+
+overflow:hidden;
+
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+transition:.4s;
+
+}
+
+.product:hover{
+
+transform:translateY(-12px);
+
+}
+
+.product img{
+
+width:100%;
+
+height:250px;
+
+object-fit:contain;
+
+background:#fff;
+
+padding:10px;
+
+border-radius:12px;
+
+display:block;
+
+}
+
+.product h3{
+
+font-size:20px;
+
+margin-top:15px;
+
+}
+
+.price{
+
+font-size:22px;
+
+color:#B76E79;
+
+font-weight:bold;
+
+}
+
+.add{
+
+background:#111;
+
+color:white;
+
+padding:12px 30px;
+
+border-radius:30px;
+
+}
+
+.add:hover{
+
+background:#B76E79;
+
+}
+/* =========================
+    BUTTONS
+========================= */
+
+button {
+  margin: 5px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:nth-child(4) {
+  background: #ff4d6d;
+  color: white;
+}
+
+button:nth-child(5) {
+  background: #333;
+  color: white;
+}
+
+/* =========================
+    RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .header-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
